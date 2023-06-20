@@ -17,7 +17,7 @@ enum class Months
     DECEMBER,
 };
 
-void printMonthsName(Months month)
+void printMonthName(Months month)
 {
     std::string month_str;
     switch (month)
