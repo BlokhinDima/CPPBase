@@ -76,8 +76,8 @@ int main()
         {
             break;
         }
-        printMonthsName(static_cast<Months>(input));
-    } 
+        printMonthName(static_cast<Months>(input));
+    }
 
     std::cout << "Goodbye!";
     return 0;
