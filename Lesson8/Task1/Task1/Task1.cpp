@@ -42,5 +42,6 @@ int main()
     catch (const BadLength& ex)
     {
         std::cout << ex.what() << " Goodbuye!" << std::endl;
+        return 0;
     }
 }
