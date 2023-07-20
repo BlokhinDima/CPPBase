@@ -1,5 +1,7 @@
 #include <iostream>
 
+#define CXX_STD_20 1
+
 class Fraction
 {
 private:
@@ -18,6 +20,12 @@ public:
 		return (numerator_ == right.numerator_) && (denominator_ == right.denominator_);
 	}
 
+#if CXX_STD_20 == 1
+	auto operator<=>(const Fraction& right) const
+	{
+		return numerator_ * right.denominator_ <=> denominator_ * right.numerator_;
+	}
+#else
 	bool operator!=(const Fraction& right) const
 	{
 		return !(*this == right);
@@ -25,9 +33,7 @@ public:
 
 	bool operator<(const Fraction& right) const
 	{
-		double this_f = static_cast<double>(numerator_) / denominator_;
-		double other_f = static_cast<double>(right.numerator_) / right.denominator_;
-		return  this_f < other_f;
+		return  numerator_ * right.denominator_ < denominator_ * right.numerator_;
 	}
 
 	bool operator<=(const Fraction& right) const
@@ -44,13 +50,13 @@ public:
 	{
 		return !(*this < right);
 	}
-
+#endif
 };
 
 int main()
 {
-	Fraction f1(4, 3);
-	Fraction f2(6, 11);
+	Fraction f1(1, 2);
+	Fraction f2(3, 4);
 
 	std::cout << "f1" << ((f1 == f2) ? " == " : " not == ") << "f2" << '\n';
 	std::cout << "f1" << ((f1 != f2) ? " != " : " not != ") << "f2" << '\n';
@@ -58,5 +64,16 @@ int main()
 	std::cout << "f1" << ((f1 > f2) ? " > " : " not > ") << "f2" << '\n';
 	std::cout << "f1" << ((f1 <= f2) ? " <= " : " not <= ") << "f2" << '\n';
 	std::cout << "f1" << ((f1 >= f2) ? " >= " : " not >= ") << "f2" << '\n';
+	std::cout << std::endl;
+
+	Fraction f3(1, 2);
+	Fraction f4(1, 2);
+
+	std::cout << "f3" << ((f3 == f4) ? " == " : " not == ") << "f4" << '\n';
+	std::cout << "f3" << ((f3 != f4) ? " != " : " not != ") << "f4" << '\n';
+	std::cout << "f3" << ((f3 < f4) ? " < " : " not < ") << "f4" << '\n';
+	std::cout << "f3" << ((f3 > f4) ? " > " : " not > ") << "f4" << '\n';
+	std::cout << "f3" << ((f3 <= f4) ? " <= " : " not <= ") << "f4" << '\n';
+	std::cout << "f3" << ((f3 >= f4) ? " >= " : " not >= ") << "f4" << '\n';
 	return 0;
 }
