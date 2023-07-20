@@ -1,3 +1,4 @@
+#include <cmath>
 #include <iostream>
 
 class Fraction
@@ -11,7 +12,7 @@ private:
 		numerator = abs(numerator);
 		int common_divisor{2};
 
-		while (common_divisor < numerator && common_divisor < denominator)
+		while (common_divisor <= numerator && common_divisor <= denominator)
 		{
 			if ((numerator % common_divisor == 0) && (denominator % common_divisor == 0))
 			{
