@@ -5,5 +5,5 @@
 class Greeter
 {
 public:
-	void greet(std::string input);
+	void greet(std::string str);
 };
