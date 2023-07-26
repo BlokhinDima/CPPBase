@@ -15,66 +15,66 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\inc\equilateral_triangle.h">
+    <ClInclude Include="inc\equilateral_triangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\inc\isosceles_triangle.h">
+    <ClInclude Include="inc\isosceles_triangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\inc\parallelogram.h">
+    <ClInclude Include="inc\parallelogram.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\inc\quadrangle.h">
+    <ClInclude Include="inc\quadrangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\inc\rectangle.h">
+    <ClInclude Include="inc\rectangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\inc\rhombus.h">
+    <ClInclude Include="inc\rhombus.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\inc\right_triangle.h">
+    <ClInclude Include="inc\right_triangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\inc\shapes.h">
+    <ClInclude Include="inc\shapes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\inc\square.h">
+    <ClInclude Include="inc\square.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\inc\triangle.h">
+    <ClInclude Include="inc\triangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\equilateral_triangle.cpp">
+    <ClCompile Include="src\equilateral_triangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\isosceles_triangle.cpp">
+    <ClCompile Include="src\isosceles_triangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\parallelogram.cpp">
+    <ClCompile Include="src\parallelogram.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\quadrangle.cpp">
+    <ClCompile Include="src\quadrangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\rectangle.cpp">
+    <ClCompile Include="src\rectangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\rhombus.cpp">
+    <ClCompile Include="src\rhombus.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\right_triangle.cpp">
+    <ClCompile Include="src\right_triangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\shapes.cpp">
+    <ClCompile Include="src\shapes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\square.cpp">
+    <ClCompile Include="src\square.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\triangle.cpp">
+    <ClCompile Include="src\triangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

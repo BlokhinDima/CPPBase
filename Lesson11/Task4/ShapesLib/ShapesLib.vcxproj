@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{8e0e744b-2376-4fa7-be62-6e4bbc135b1d}</ProjectGuid>
+    <ProjectGuid>{e9f94f1f-bd6a-4523-ba9a-19b252a45bc9}</ProjectGuid>
     <RootNamespace>ShapesLib</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -106,7 +106,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;SHAPESLIB_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>../inc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)inc</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -122,7 +122,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;SHAPESLIB_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>../inc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)inc</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -133,28 +133,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\inc\equilateral_triangle.h" />
-    <ClInclude Include="..\inc\isosceles_triangle.h" />
-    <ClInclude Include="..\inc\parallelogram.h" />
-    <ClInclude Include="..\inc\quadrangle.h" />
-    <ClInclude Include="..\inc\rectangle.h" />
-    <ClInclude Include="..\inc\rhombus.h" />
-    <ClInclude Include="..\inc\right_triangle.h" />
-    <ClInclude Include="..\inc\shapes.h" />
-    <ClInclude Include="..\inc\square.h" />
-    <ClInclude Include="..\inc\triangle.h" />
+    <ClInclude Include="inc\equilateral_triangle.h" />
+    <ClInclude Include="inc\isosceles_triangle.h" />
+    <ClInclude Include="inc\parallelogram.h" />
+    <ClInclude Include="inc\quadrangle.h" />
+    <ClInclude Include="inc\rectangle.h" />
+    <ClInclude Include="inc\rhombus.h" />
+    <ClInclude Include="inc\right_triangle.h" />
+    <ClInclude Include="inc\shapes.h" />
+    <ClInclude Include="inc\square.h" />
+    <ClInclude Include="inc\triangle.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\equilateral_triangle.cpp" />
-    <ClCompile Include="..\src\isosceles_triangle.cpp" />
-    <ClCompile Include="..\src\parallelogram.cpp" />
-    <ClCompile Include="..\src\quadrangle.cpp" />
-    <ClCompile Include="..\src\rectangle.cpp" />
-    <ClCompile Include="..\src\rhombus.cpp" />
-    <ClCompile Include="..\src\right_triangle.cpp" />
-    <ClCompile Include="..\src\shapes.cpp" />
-    <ClCompile Include="..\src\square.cpp" />
-    <ClCompile Include="..\src\triangle.cpp" />
+    <ClCompile Include="src\equilateral_triangle.cpp" />
+    <ClCompile Include="src\isosceles_triangle.cpp" />
+    <ClCompile Include="src\parallelogram.cpp" />
+    <ClCompile Include="src\quadrangle.cpp" />
+    <ClCompile Include="src\rectangle.cpp" />
+    <ClCompile Include="src\rhombus.cpp" />
+    <ClCompile Include="src\right_triangle.cpp" />
+    <ClCompile Include="src\shapes.cpp" />
+    <ClCompile Include="src\square.cpp" />
+    <ClCompile Include="src\triangle.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
