@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.22.0)
 project(Task3)
-set(EXECUTABLE Task3)
+set(EXECUTABLE ${PROJECT_NAME})
 set(LIB_DIR "${CMAKE_CURRENT_SOURCE_DIR}/LeaverLib")
 add_subdirectory(${LIB_DIR})
 include_directories(${LIB_DIR})
