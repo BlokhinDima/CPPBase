@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "lib/leaver_lib.h"
+#include "leaver_lib.h"
 
 int main()
 {

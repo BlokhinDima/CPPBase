@@ -2,7 +2,6 @@
 
 #include <string>
 
-#define LEAVERLIBDYNAMIC_EXPORTS
 #ifdef LEAVERLIBDYNAMIC_EXPORTS
 #define LEAVERLIB_API __declspec(dllexport)
 #else
