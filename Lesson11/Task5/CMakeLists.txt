@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.22.0)
 project(Task5)
-set(EXECUTABLE Task5)
+set(EXECUTABLE ${PROJECT_NAME})
 set(LIB_DIR "${CMAKE_CURRENT_SOURCE_DIR}/ShapesLib")
 set(INC_DIR "${LIB_DIR}/inc")
 add_subdirectory(${LIB_DIR})

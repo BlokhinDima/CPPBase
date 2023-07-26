@@ -8,5 +8,5 @@ file(GLOB SRC_FILES "${SRC_DIR}/*.cpp")
 file(GLOB INC_FILES "${INC_DIR}/*.h")
 
 include_directories(${INC_DIR})
-add_library(ShapesLib SHARED ${INC_FILES} ${SRC_FILES})
-set_target_properties(ShapesLib PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+add_library(${PROJECT_NAME} SHARED ${INC_FILES} ${SRC_FILES})
+set_target_properties(${PROJECT_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
