@@ -1,11 +1,6 @@
 #pragma once
 #include "rhombus.h"
-
-#ifdef SHAPESLIBAPI_EXPORT
-#define SHAPESLIB_API __declspec(dllexport)
-#else
-#define SHAPESLIB_API __declspec(dllimport)
-#endif
+#include "api_macro.h"
 
 namespace quadrangles
 {

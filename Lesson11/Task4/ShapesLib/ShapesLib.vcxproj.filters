@@ -45,6 +45,9 @@
     <ClInclude Include="inc\triangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="inc\api_macro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\equilateral_triangle.cpp">
